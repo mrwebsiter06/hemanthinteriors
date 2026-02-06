@@ -1,0 +1,206 @@
+/* Logo */
+.logo {
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* Navbar Title Font */
+#header-title {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.5rem;
+    padding-left: 5px;
+}
+
+/* Hero Image */
+.Center-hero {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Hero Banner */
+.hero-banner {
+    position: relative;
+    text-align: center;
+}
+
+/* Banner Title */
+.banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Angkor", serif;
+    font-weight: bolder;
+    font-style: normal;
+    color: #fff; /* white */
+    font-size: 3rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Soft shadow for readability */
+}
+
+/* Hero Button */
+.hero-banner button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 30px;
+    background-color: transparent;
+    color: rgb(232, 90, 19);
+    border: 2px solid rgb(232, 90, 19);
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+/* Hover Effect for Button */
+.hero-banner button:hover {
+    background-color: rgb(232, 90, 19);
+    color: #000;
+}
+/* Section Titles */
+.section-title {
+    font-family: "Madimi One", sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color:  rgb(232, 90, 19);
+}
+
+/* Section Text */
+.section-text {
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+    line-height: 24px;
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+.section-ul{
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+    line-height: 24px;
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+/* Service Cards */
+.service-card {
+    border: none;
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px  rgb(232, 90, 19);
+}
+
+/* Contact Extra Section */
+/* Contact Extra Section */
+#contact-extra .btn-outline-success {
+    border: 2px solid #25D366;
+    color: #25D366;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: white;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+}
+
+#contact-extra .btn-outline-success:hover {
+    background-color: #25D366;
+    color: white;
+}
+
+/* General Box Style */
+#contact-extra .shadow {
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+#contact-extra .shadow:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content p, .footer-links {
+    margin: 10px 0;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a, .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links a {
+    font-size: 20px;
+}
+
+.footer-links a:hover, .social-links a:hover {
+    text-decoration: underline;
+}
+
+.btn-outline-danger {
+    border-color: #dc3545;
+    color: #dc3545;
+  }
+
+  .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+  }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .banner-title {
+        font-size: 2.5rem;
+    }
+    .hero-banner button {
+        padding: 10px 25px;
+        font-size: 2rem;
+    }
+    
+
+}
+
+/* Responsive Media Query */
+@media only screen and (max-width: 600px) {
+    .Center-hero {
+        height: 400px;
+        width: 100%;      
+    }
+    .banner-title {
+        font-size: 2.3rem;
+    }
+    .hero-banner button {
+        top: 87%;
+        font-size: 1.2rem;
+        padding: 10px 24px;
+    }
+   
+}
