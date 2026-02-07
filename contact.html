@@ -112,22 +112,34 @@
           </div>
         </br>
     </br>
-    <form action="https://formsubmit.co/feedback.hemanthinteriors@gmail.com" method="POST">
-            <h2 class="section-title">Drop us a line!</h2>
-          <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Your Name" required>
-          </div>
-          <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Your Email" required>
-          </div>
-          <div class="mb-3">
-            <input type="tel" class="form-control" placeholder="Phone Number" required>
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-dark w-100">Send Message</button>
-        </form>
+ <form action="https://formsubmit.co/feedback.hemanthinteriors@gmail.com" method="POST">
+  <h2 class="section-title">Drop us a line!</h2>
+
+  <div class="mb-3">
+    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+  </div>
+
+  <div class="mb-3">
+    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+  </div>
+
+  <div class="mb-3">
+    <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
+  </div>
+
+  <div class="mb-3">
+    <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+  </div>
+
+  <!-- REQUIRED to display content properly -->
+  <input type="hidden" name="_template" value="table">
+
+  <!-- Optional but recommended -->
+  <input type="hidden" name="_subject" value="New Contact Form - Hemanth Interiors">
+  <input type="hidden" name="_captcha" value="false">
+
+  <button type="submit" class="btn btn-dark w-100">Send Message</button>
+</form>
       </div>
     </div>
   </div>
@@ -174,5 +186,6 @@
 
 </body>
 </html>
+
 
 
